@@ -8,6 +8,7 @@
   --text-footer-color: rgba(255, 255, 255, 0.6);
   --border--hed--color: #ececec;
   --border--portfilio-color: #EEEEEE;
+  --icon-color--: #AFB1B8;
 }
 
 h1,
@@ -121,6 +122,14 @@ margin-bottom: 20px;
   color: #2196f3;
 }
 
+.auth-icon {
+margin-right: 10px;
+fill: currentColor;
+}
+
+
+
+
 /*------hero------*/
 .hero {
   padding-top: 200px;
@@ -167,36 +176,22 @@ background-color: var(--footer-hero-color);
 margin-left: 30px;
 }
 
-.benefits-list .item::before {
-content: "";
-display: block;
+.benefits-box {
 width: 270px;
 height: 120px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+display: flex;
+align-self: center;
+justify-content: center;
 background-color: var(--second-bg-color);
 margin-bottom: 30px;
-
+border-radius: 4px;
 }
 
-.benefits-list .item:nth-child(1)::before {
-background-image: url(../images/antenna\ 1.svg);
+.benefits-icon {
+display: flex;
+align-self: center;
+justify-content: center;
 }
-
-.benefits-list .item:nth-child(2)::before {
-background-image: url(../images/diagram\ 2.svg);
-}
-
-.benefits-list .item:nth-child(3)::before {
-background-image: url(../images/clock\ 3.svg);
-}
-
-.benefits-list .item:nth-child(4)::before {
-background-image: url(../images/astronaut\ 4.svg);
-}
-
-
 
 /*------Activity-------*/
 
@@ -252,7 +247,7 @@ margin-left: 30px;
   text-align: center;
 }
 
-.team-list .item + .item {
+.team-list .item:nth-child(n+2) {
   width: 270px;
   margin-left: 30px;
 }
@@ -273,6 +268,103 @@ padding-bottom: 30px;
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.list-network {
+display: flex;
+align-self: center;
+justify-content: center;
+}
+
+
+.network-titel {
+width: 100%;
+height: 100%;
+display: flex;
+align-self: center;
+justify-content: center;
+background-color: var(--primary-bg-color);
+color: var(--icon-color--);
+border-radius: 50%;
+}
+
+.network-titel:hover,
+.network-titel:focus {
+background-color: var(--accent-color);
+color: var(--primary-bg-color);
+}
+
+.social-icon {
+display: flex;
+align-self: center;
+justify-content: center;
+fill: currentColor;
+}
+
+.network {
+width: 44px;
+height: 44px;
+}
+
+
+
+
+/*--------partners--------*/
+.partners-title {
+margin-bottom: 50px;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+.partners-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-link {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color--);
+  width: 100%;
+  height: 100%;
+}
+
+.partners-link:hover,
+.partners-link:focus {
+  color: var(--accent-color);
+}
+
+.partners {
+  width: 170px;
+  height: 92px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--icon-color--);
+  border-radius: 4px;
+  align-self: center;
+  justify-content: center;
+}
+
+.partners-icon {
+  fill: currentColor;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners:not(:first-child) {
+  margin-left: 30px;
+}
+
+.partners:hover,
+.partners:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /*------footer------*/
