@@ -46,7 +46,7 @@
     <main>
       <section class="hero container-hero">
         <h1 class="hero-title">Эффективные решения <br/> для вашего бизнеса</h1>
-        <button type="button" class="button primary">Заказать услугу</button>
+        <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
       </section>
       <!--benefits-->
       <section class="section">
@@ -97,21 +97,21 @@
                 src="./images/box1-min.jpg"
                 alt="фото планшет и клавиатура"
                 width="370"
-              />
+              /><div class="item-text"><h3 class="text-img">Десктопные приложения</h3></div>
             </li>
             <li class="item">
               <img
                 src="./images/box2-min.jpg"
                 alt="фото ноутбук и мобильный телефон"
                 width="370"
-              />
+              /><div class="item-text"><h3 class="text-img">Мобильные приложения</h3></div>
             </li>
             <li class="item">
               <img
                 src="./images/box3-min.jpg"
                 alt="фото рисунок на планшете"
                 width="370"
-              />
+              /><div class="item-text"><h3 class="text-img">Дизайнерские решения</h3></div>
             </li>
           </ul>
         </div>
@@ -226,5 +226,8 @@
         </address>
       </div>
     </footer>
+<div class="bakdrop is-hidden" data-modal><div class="modal"><button class="modal-close" data-modal-close>	
+&#10006;</button></div></div>
+<script src="./js/modal.js"></script>
   </body>
 </html>
